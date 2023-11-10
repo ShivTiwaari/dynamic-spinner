@@ -1,8 +1,4 @@
-# React + Vite
+# A Dynamic Spinner Wheel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This spinner wheels updates itself by removing the selected number on the wheel, suppose 5 is selected after rotating then 5 will be removed from the wheel.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

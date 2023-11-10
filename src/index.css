@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bodyDiv{
+  width: 99.99vw;
+  height: 99.99vh;
+  position: relative;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+}
+
+.spinnerParentDiv{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform : translate(-50%, -50%);
+  height: 95vh;
+  width: 95vh;
+}
+
+.spinner{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  background-color: #eee;
+}
+
+.center{
+  background-color: black;
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.pointer{
+  width: 100px;
+  height: 80px;
+  background-color: red;
+  clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%);
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-80%, -50%);
+  z-index: 50;
+}
+
+.spinButton{
+  border: 1px solid white;
+  width: 10vh;
+  height: 10vh;
+  z-index: 5;
+  border-radius: 50%;
+  background-color: orange;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.piece{
+  width: 50%;
+  position: absolute;
+  transform-origin:100% 50%;
+  display: flex;
+  padding: 3vh;
+  justify-content: start;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+button{
+  position: absolute;
+  top: 2vh;
+  left: 10vw;
+}
+
+.bucket{
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  height: 50vh;
+  width: 30vw;
+  border: 5px solid white;
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgba(250, 250, 250, 0.3);
+  color: white;
+  overflow-y: scroll;
+}
+
+.removedElement{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: full;
+  height: 50px;
+  border: 2px solid white;
+  font-size: xx-large;
+}
+
